@@ -14,10 +14,22 @@ const post = require('./post.js');
 //start wolverine 
 const w = wolverine();
 
-log.info(w);
+const models = mongoose.modelNames();
+const _post = w.find('Post');
+console.log('_post: ', _post);
+
+//gain access to models
+console.log('MODELS: ', w.db.connections[0].base.models);
+
+//case sensitive access to model 
+const postModel = mongoose.model('Post');
+
+console.log('POST: ', postModel);
+console.log('MODELS: ', models);
+
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.send('Wolverines!');
 });
 
 app.listen(3000, function () {

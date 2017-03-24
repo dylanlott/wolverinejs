@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const PostSchema = new Schema({
   title: String,
   body: Schema.Types.Mixed,
-  date: Date.now,
+  date: Date,
   user: Schema.Types.ObjectId
 });
 
