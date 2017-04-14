@@ -1,6 +1,6 @@
 # WolverineJS
 
-> A realtime socket based Mongo ODM
+> A realtime event-based  Mongo ODM with Socket.io support out of the box. 
 
 # Basic API
 
