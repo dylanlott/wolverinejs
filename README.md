@@ -1,5 +1,10 @@
 # WolverineJS
 
+====
+## THIS IS NOT PRODUCTION READY -- DO NOT USE THIS IN PRODUCTION YET. 
+## THIS LIBRARY IS STILL IN THE EXPERIMENTAL PHASE AND BREAKING CHANGES WILL BE MADE REGULARLY.
+==== 
+
 > A realtime event-based  Mongo ODM with Socket.io support out of the box. 
 
 # Basic API
