@@ -16,6 +16,10 @@ w.on('create', function(data) {
   log.info(data);
 });
 
+w.on('ready', function() {
+  log.info('wolverineJS is ready');
+});
+
 app.get('/', function (req, res) {
   res.send('Wolverines!');
 });
