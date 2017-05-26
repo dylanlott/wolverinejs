@@ -9,7 +9,7 @@ const express = require('express');
 const app = express();
 const post = require('./post.js');
 const postModel = mongoose.model('Post');
-const w = new wolverine();
+const w = new wolverine('localhost:27017/wolverine');
 
 w.on('create', function(data) {
   log.info('create event fired');
